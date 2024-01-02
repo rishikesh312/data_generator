@@ -27,8 +27,8 @@ if st.button('Start Synthesis'):
         real_data = {file_name: real_data}
         metadata = MultiTableMetadata()
         metadata.detect_from_dataframes(real_data)
-        metadata.save_to_json('./data/metadata.json')
-        metadata = MultiTableMetadata.load_from_json('./data/metadata.json')
+        metadata.save_to_json('metadata.json')
+        metadata = MultiTableMetadata.load_from_json('metadata.json')
         print('Metadata created successfully')
         st.write('Uploaded data processed.')
     elif use_example:
