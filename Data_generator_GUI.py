@@ -72,3 +72,4 @@ if st.button('Start Synthesis'):
     st.write('Quality Report')
     st.write('The quality report is a summary of the quality of the synthetic data. The quality of the synthetic data is measured by comparing the statistical properties of the synthetic data with the real data. The score is presented in an integer format, which is the percentage divided by 100.')
     st.write(quality_report.get_details("Column Shapes"))
+    os.remove('metadata.json')
